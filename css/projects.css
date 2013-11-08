@@ -1,0 +1,66 @@
+#projects{
+	margin-left:10px;	
+	color:#2e98a7;
+	font-family : Arial;
+	width:700px;
+}
+	#projects h3{
+		font-weight:normal;
+	}
+	#projects #button{
+		margin-right:3px;
+		float:right;
+		color:black;
+	}
+	
+	#projects form input,
+	#projects form input select{
+		margin-right:20px;
+		width:110px;
+	}
+	
+	#projects table{
+		width:100%;
+		color:#2e98a7;
+		font-size:12px;
+	}	
+		#projects table thead tr,
+		#projects table thead tr th,
+		#projects table tbody tr,
+		#projects table tbody tr td{
+			width:25%;
+			border:1px #2e98a7 solid;
+			padding:5px;
+		}
+		#projects table tbody tr td a,
+		#projects table tbody tr td a:visited{
+			color:#2e98a7;
+		}
+		#projects table tbody tr td a:hover{		
+			color: #66CCCC;
+			text-decoration:none;
+		}
+		#projects table tbody tr .action{
+			text-align:center;
+		}
+		
+	#projects #pagination {
+		float: right;
+		margin-top:20px;
+		margin-right:2px;
+	}
+		#projects  a,
+		#projects  a:visited,
+		#projects  a:active{
+			color:#2e98a7;
+			text-decoration:none;
+		}
+		#projects  a:hover{
+			color: #66CCCC;
+			text-decoration:none;
+		}
+		
+	#projects .btn{
+		padding:5px;
+		margin:5px 5px 5px 0px;
+	}

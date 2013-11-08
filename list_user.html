@@ -1,0 +1,99 @@
+<html lang="fr-fr">
+<head>
+<meta charset="utf-8"/>
+<link type="text/css" rel="stylesheet" href="./css/style.css" />
+<link type="text/css" rel="stylesheet" href="./css/users.css" />
+
+<link type="text/css" rel="stylesheet" href="./css/projects.css" />
+<link type="text/css" rel="stylesheet" href="./css/skills.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="bloc_page">	
+		<div id="header">
+			<img src="./img/header.jpg"><div id="inf_users"><div id="bienvenue">Bienvenue :</div><div id="name">Prénom / Nom</div><div id="profil"><a href="users.html">Votre profil</a></div><a href="notifications.html"><input border=0 src="./img/not.jpg" type=image value=submit align="center" id="not"></a><a href="login.html"><input border=0 src="./img/deco.jpg" type=image value=submit align="center" id="deco"></a></div>
+		</div>
+			<div id="menus">
+				<div class="menu menupasdernier" id="home"><a href="index.html">Accueil</a></div>
+				<div class="menu menupasdernier" id="users"><a href="list_user.html">Utilisateur</a></div>
+				<div class="menu menupasdernier" id="project"><a href="projects.html">Projets</a></div>
+				<div class="menu" id="skills"><a href="skills.html">Compétences</a></div>
+			</div>
+			<div class="clearer"></div>
+		<br />
+		<div id="file"><a href="index.html">Home</a> > Liste des utilisateurs</div><br />
+		
+<section id="projects">
+	<h3>Filtres</h3>
+	<div id="filters">				
+		<!-- Les filtres seront traités en AJAX-->
+		<form method="post">
+			<label for="firstname">Prénom :</label>
+				<input name="firstname" type="text" placeholder="prénom"/>
+			<label for="lastname">Nom :</label>
+				<input name="lastname" type="text" placeholder="nom"/>
+			<label for="status-filter">Formation :</label>
+				<select name="status-filter">
+					<option value="current">IT START</option>
+					<option value="finished">DL</option>
+					<option value="iddle">CDPN</option>
+				</select>
+		</form>
+	</div>
+	
+	<h3>Tableau des résultats</h3>
+	<table>
+		<thead>
+			<tr>
+				<th>Prénom</th>
+				<th>Nom</th>
+				<th>Formation</th>
+				<th>&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="users.html" title="Accéder au profil de l'utilisateur">Prénom</a></td>
+				<td><a href="users.html" title="Accéder au profil de l'utilisateur">Nom</a></td>
+				<td>ITSTART</td>
+				<td class="action"><a href="#" class="delete" title="Supprimer" onclick="confirm('Voulez vous réellement supprimer ce profil ?');">X</a></td>
+			</tr>
+			<tr>
+				<td><a href="users.html" title="Accéder au profil de l'utilisateur">Prénom</a></td>
+				<td><a href="users.html" title="Accéder au profil de l'utilisateur">Nom</a></td>
+				<td>ITSTART</td>
+				<td class="action"><a href="#" class="delete" title="Supprimer" onclick="confirm('Voulez vous réellement supprimer ce profil ?');">X</a></td>
+			</tr>
+			<tr>
+				<td><a href="users.html" title="Accéder au profil de l'utilisateur">Prénom</a></td>
+				<td><a href="users.html" title="Accéder au profil de l'utilisateur">Nom</a></td>
+				<td>ITSTART</td>
+				<td class="action"><a href="#" class="delete" title="Supprimer" onclick="confirm('Voulez vous réellement supprimer ce profil ?');">X</a></td>
+			</tr>
+			<tr>
+				<td><a href="users.html" title="Accéder au profil de l'utilisateur">Prénom</a></td>
+				<td><a href="users.html" title="Accéder au profil de l'utilisateur">Nom</a></td>
+				<td>ITSTART</td>
+				<td class="action"><a href="#" class="delete" title="Supprimer" onclick="confirm('Voulez vous réellement supprimer ce profil ?');">X</a></td>
+			</tr>				
+		</tbody>
+	</table>
+	
+	<div id="pagination">
+		<a href="#" id="previous-page" class="pagination"><</a>
+		<a href="#" id="first-page" class="pagination">1</a>
+		<a href="#" id="inbetween-pages" class="pagination">...</a>
+		<a href="#" id="last-page" class="pagination">5</a>
+		<a href="#" id="next-page" class="pagination">></a>
+	</div>
+</section>
+				<div class="clearer"></div>
+			<div id="footer">
+				<div class="footer footerpasdernier" id="contact"><a href="contact.html">Contactez l'administrateur</a>&nbsp;</div><div class="footer footerpasdernier" id="notices"><a href="notices.html">Mentions Légales</a>&nbsp;</div><div class="footer" id="sitemap"><a href="sitemap.html">Plan du site</a></div><div id="menu_footer_right">© IMIE</div>
+			</div>	
+			<div class="clearer"></div>
+</div>	
+</body>
+</html>

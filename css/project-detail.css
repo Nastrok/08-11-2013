@@ -1,0 +1,70 @@
+#project-detail{
+		margin-left:10px;	
+	color:#2e98a7;
+	font-family : Arial;
+	width:700px;
+}
+	#project-detail h3{
+		margin-top:40px;
+		font-weight:normal;
+	}
+	
+		#project-detail  a,
+		#project-detail  a:visited,
+		#project-detail  a:active{
+			color:black;
+			text-decoration:none;
+		}
+		#project-detail  a:hover{
+			/*color: #66CCCC;*/
+			text-decoration:none;
+		}
+
+		#project-detail  #left{
+			margin-top:0px;
+		}
+		#project-detail #right{
+			float:right;
+			margin-top:-12px;
+		}
+		#project-detail  #left a{
+			color:#2e98a7;
+		}
+		#project-detail  #left a:hover{
+			color:#66CCCC;
+		}		
+	#project-detail table{
+		width:100%;
+		color:#2e98a7;
+		font-size:12px;
+	}	
+		#project-detail table thead tr,
+		#project-detail table thead tr th,
+		#project-detail table tbody tr,
+		#project-detail table tbody tr td{
+			width:20%;
+			border:1px #2e98a7 solid;
+			padding:5px;
+		}
+		#project-detail table tbody tr td a,
+		#project-detail table tbody tr td a:visited{
+			color:#2e98a7;
+		}
+		#project-detail table tbody tr .action{
+			text-align:center;
+		}
+	
+	#project-detail #btns {
+		margin-top:30px;
+		margin-bottom:30px;
+	}
+	
+	#project-detail .btn{
+		padding:5px;
+		margin:5px 5px 5px 0px;
+		width:25%;
+	}	
+	
+	#project-detail #tabletitre{
+		margin-top:100px;
+	}

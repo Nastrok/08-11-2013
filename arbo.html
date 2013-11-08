@@ -1,0 +1,273 @@
+<html lang="fr-fr" charset=UTF-8>
+<head>
+<link type="text/css" rel="stylesheet" href="./css/style.css" />
+<link type="text/css" rel="stylesheet" href="./css/users.css" />
+<link type="text/css" rel="stylesheet" href="./css/projects.css" />
+<link type="text/css" rel="stylesheet" href="./css/skills.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	
+<style>
+ul {
+   list-style: none;
+}
+
+li {
+    height: 50px;
+    width : 70px;
+}
+.submenu {
+    border-bottom : 1px solid black;
+    border-left : 1px solid black;
+    height: 20px;
+    width: 20px ;
+    margin-left:15px;
+}
+.level2 {
+    margin-top:-20px;
+}
+
+.level3 {
+    height: 40px;
+}
+
+.ul2 {
+    margin-left: 20px;
+}
+
+.ul2 .submenu{
+    height: 40px ;
+}
+
+.level3 {
+    margin-left:5px;
+}
+
+.ul3 .submenu {
+    margin-left: 30px;
+    margin-top: -15px;
+    height: 20px;
+}
+
+.level4 {
+    margin-left: 50px;
+    margin-top: -12px
+}
+
+.twoitems{
+    border-bottom : 1px solid black;
+    border-left : 1px solid black;
+    height: 80px;
+    width: 15px ;
+    margin-left:15px;
+}
+
+.mobil {
+    height: 200px;
+}
+
+.mob {
+    margin-left: 30px;
+    margin-top : -30px;
+}
+
+.a_btn{
+    padding : 2px 5px;
+    border : 1px solid black;
+    border-radius : 5px;
+    background-color : #48b9c7;
+    text-decoration : none;
+    color: black;
+}
+
+#C {
+    margin-top:-12px;
+    margin-left:50px;
+}
+#Java {
+    margin-top:-12px;
+    margin-left: 50px;
+}
+.submenu3 {
+    border-bottom : 1px solid black;
+    border-left : 1px solid black;
+    height: 20px;
+    width: 15px ;
+    margin-left:20px;
+    margin-top:-20px
+}
+
+.back{
+    cursor:pointer;
+}
+
+#title_box {
+    color: rgb(72, 185, 199);
+    width: 268px;
+    height: 0px;
+    display: inline;
+    font-size: 21px;
+    margin-left: 14px;
+    margin-top: 0px;
+}
+
+
+#arbo-competence {
+    margin : 0 auto;
+}
+
+.toshow {
+    display : none;
+}
+
+.show:hover{
+    cursor : pointer;
+}
+
+.hide:hover {
+    cursor : pointer;
+}
+
+
+#shadow-box {
+    position: absolute;
+	top :0;
+	left : 0;
+    width : 100%;
+    height : 100%;
+    background-color: black;
+    opacity : 0.7;
+    display: none;
+    z-index : 10;
+}
+
+#shadow-create {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 250px;
+    height: 130px;
+    background-color: grey;
+    border: 1px solid black;
+    display: none;
+    z-index : 20;
+}
+#shadow-create > .a_btnbox {
+    display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(72, 185, 199);
+    text-decoration: none;
+    color: black;
+    margin-left: 42px;
+    margin-top: 27px;
+}
+#shadow-create #label {
+    border: 1px solid black;
+    margin-top: 18px;
+    margin-left: 53px;
+}
+
+</style>
+</head>
+<body>
+<div id="bloc_page">	
+		<div id="header">
+			<img src="./img/header.jpg"><div id="inf_users"><div id="bienvenue">Bienvenue :</div><div id="name">Prénom / Nom</div><div id="profil"><a href="users.html">Votre profil</a></div><input border=0 src="./img/not.jpg" type=image value=submit align="center" id="deco"><input border=0 src="./img/deco.jpg" type=image value=submit align="center" id="deco"></div>
+		</div>
+			<div id="menus">
+				<div class="menu menupasdernier" id="home"><a href="index.html">Home</a></div>
+				<div class="menu menupasdernier" id="users"><a href="list_user.html">Users</a></div>
+				<div class="menu menupasdernier" id="project"><a href="projects.html">Projects</a></div>
+				<div class="menu" id="skills"><a href="skills.html">Skills</a></div>
+			</div>
+			<div class="clearer"></div>
+		<br />
+		<div id="file">Home > Skills</div><br />
+		<div id="contenu_page">
+    <div id="#arbo-competence">
+	<div id="shadow-box"></div>
+	<div id="shadow-create">
+		<h2 id="title_box">Ajouter une compétence</h2>
+		<input type="text" id="label" value="label" onfocus="if(this.value =='label') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'label'; }"/><br/>
+		<a class="a_btn a_btnbox create">Create</a>
+		<a class="a_btn a_btnbox back">Back to list</a> 
+	</div>
+        <form>
+            <a class="a_btn create">Create</a>
+            <a href="www.google.com" class="a_btn">Update</a>    
+            <a href="??" class="a_btn">Delete</a>
+            <a href="www.google.com" class="a_btn">Read</a><br/><br/>
+            <input type="text" name="search" value="Recherche"  onfocus="if(this.value =='Recherche') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Recherche'; }">
+            <input type="submit" name="SendReq" value="Go">
+                <ul>
+                    <li class="level1">Developpement
+                        <div class="submenu"></div>
+                        <div class="submenu mobil"></div>
+                    </li>
+                    <ul class="ul2">
+                        <li class="level2">Web <span class="hide">-</span>
+                            <div class="submenu tohide"></div>
+                            <div class="submenu tohide"></div>
+                            <div class="twoitems tohide"></div>
+                        </li>
+                        <ul class="ul3 tohide">
+                            <li class="level3">HTML</li>
+                            <li class="level3">Javascript</li>
+                            <div class="submenu"></div>
+                                <li class="level4">Jquery</li>
+                            <li class="level3">CSS</li>
+                            </ul>
+                            
+                        </ul>
+                    </ul>
+                     <ul  class="ul2">
+                        <li class="level2 mob">Mobile <span class="show">+</span></li>
+                            <ul class="toshow">
+                                <div class="submenu3"></div>
+                                <li class="level3" id="C">ObjectiveC</li> 
+                                <div class="submenu3"></div>
+                                <li class="level3" id="Java">Java</li>
+                            </ul> 
+                    </ul>
+                </ul>
+        </form>
+    </div>
+	
+<script>
+$( document ).ready( function() {
+		$('.show').click(function() {
+			$('.tohide').css('display', 'none')
+			$('.hide').html('+')
+			$('.show').html('-')
+			$('.toshow').css('display', 'block')
+			$('.mobil').css('height' ,'30px')
+		})
+		$('.hide').click(function() {
+			$('.toshow').css('display', 'none')
+			$('.hide').html('-')
+			$('.show').html('+')
+			$('.tohide').css('display', 'block')
+			$('.mobil').css('height' ,'200px')
+		})
+        
+        $('.create').click(function() {
+            $('#shadow-box').css('display', 'block')
+            $('#shadow-create').css('display', 'block')          
+        })
+            $('.back').click(function() {
+            $('#shadow-box').css('display', 'none')
+            $('#shadow-create').css('display', 'none')          
+        })
+	})
+</script>
+				<div class="clearer"></div>
+				<br />
+			</div>
+			<div id="footer">
+				<div class="menu menupasdernier" id="contact"><a href="contact.html">Contact admin</a>&nbsp;</div><div class="menu menupasdernier" id="notices"><a href="notices.html">Legals Notices</a>&nbsp;</div><div class="menu" id="sitemap"><a href="sitemap.html">Sitemap</a></div><div id="menu_footer_right">© IMIE</div>
+			</div>	
+			<div class="clearer"></div>
+</div>	
+</body>
+</html>

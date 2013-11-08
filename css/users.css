@@ -1,0 +1,140 @@
+#content_user_home{
+  position:relative;
+  margin-top:20px;
+  color:#2e98a7;
+  font-family:Arial, sans-serif;
+  font-size:0.88em;
+} 
+#content_user_home #light_box_addskills{
+  display:none;
+  position:absolute;
+  background:grey;
+  z-index:500;
+  color: rgb(72, 185, 199);
+  font-weight:bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding:30px 30px 0 30px;
+  top:200px;
+  margin-left:20%;
+  left:50px;
+}
+#content_user_home #light_box_addskills input{
+  color: rgb(72, 185, 199);
+  border:none;
+  font-weight:bold;
+}
+
+#bienvenue{
+  display:block;
+  margin-left:10px;
+}
+#user_projects_tab{
+  margin-left: 20px;
+}
+#table_projects{
+  margin-top:30px;
+  font-size:0.75em;
+	color: #2e98a7;
+	padding:10px;
+  text-align:center;
+}
+
+#table_projects .projet_termine{
+  color:#48b7c7;
+}
+#table_projects .projet_encours{
+  color: #3dc3b5;
+}
+
+#table_projects a:hover{
+    color:#2e98a7;
+}
+
+td, th{
+	padding: 5px;
+	border: 1px solid #4ca4ca;
+}
+caption{
+  font-size: 1.4em;
+}
+
+#cellule_titre, th{  
+  font-weight:bold;
+  font-size: 1.2em;
+}
+#cellule_titre{
+  border:none;
+}
+
+#user_skills{
+  margin:30px 0 20px 50px;
+
+}
+
+#user_skills_title{
+  display:block;
+  font-size:1.05em;
+  margin-bottom:20px;
+}
+#user_skills .user_compet{
+  display:block;
+}
+#user_skills ul{
+  padding:0;
+  margin-left: 20px;
+}
+#user_skills li{
+  float: left;
+  width: 10px;
+}
+#user_skills .user_levels{
+  display:inline-block;
+  min-width: 10px;
+  vertical-align: top;
+}
+
+#user_skills .user_ul{
+   position : relative;
+   bottom: 14px;
+}
+#user_skills li{
+  list-style-type: square;
+  color: #2e98a7;
+}
+#user_skills li.empty{
+  opacity:0.4;
+}
+
+#user_skills .competence{
+  display:block;
+}
+#content_user_home #manage_user{
+  display:block;
+  margin:30px 0 20px 50px;
+}
+
+#content_user_home #manage_title{
+  display:block;
+  font-size:1.05em;
+  margin-bottom:20px;
+}
+
+#manage_user .champs_manage_user{
+  display:block; 
+  margin-bottom:5px;
+  color: #2e98a7;
+}
+
+#content_user_home .users_submit{
+  border: 1px solid white;
+  border-radius:8px;
+  padding:3px;
+  background: #2e98a7; 
+  color: #ffffff;
+  font-weight:bold;
+  font-family: Arial, sans-serif;   
+}
+#content_user_home .users_submit:hover{
+  cursor:pointer;
+}

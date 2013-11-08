@@ -1,0 +1,48 @@
+#project-edit{
+	margin-left:10px;
+	color:#2e98a7;
+	font-family : Arial;
+	min-width: 700px;
+}
+	#project-edit h1{
+		margin-bottom:40px;
+	}
+	
+		#project-edit  a,
+		#project-edit  a:visited,
+		#project-edit  a:active{
+			color:black;
+			text-decoration:none;
+		}
+		#project-edit  a:hover{
+			/*color: #66CCCC;*/
+			text-decoration:none;
+		}
+
+		#project-edit  #left,
+		#project-edit #right{
+			position:absolute;
+			top:-170px;
+			display:inline-block;
+		}
+
+		#project-edit #right{
+			left:220px;
+		}
+		
+		#project-edit  #left label,
+		#project-edit #right input{
+			display:block;
+			margin-bottom:15px;
+		}
+	
+	#project-edit #btns {
+		margin-top:220px;
+		margin-bottom:30px;
+	}
+	
+	#project-edit .btn{
+		color:black;
+		margin-right:20px;
+		width:25%;
+	}	

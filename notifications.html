@@ -1,0 +1,78 @@
+<html lang="fr-fr">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+<link type="text/css" rel="stylesheet" href="./css/style.css" />
+<link type="text/css" rel="stylesheet" href="./css/users.css" />
+<link type="text/css" rel="stylesheet" href="./css/projects.css" />
+<link type="text/css" rel="stylesheet" href="./css/skills.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	
+<style>
+	.notification-box {
+		padding :20px 20px 20px 20px;
+		margin : 0 auto;
+		min-heigth : 50px;
+		width : 500px;
+		background-color : rgb(46, 152, 167);
+		margin-bottom : 30px;
+	}
+	
+	.notification-close{
+		position : relative;
+		float : right;
+	}
+	
+</style>
+</head>
+<body>
+<div id="bloc_page">	
+		<div id="header">
+			<img src="./img/header.jpg"><div id="inf_users"><div id="bienvenue">Bienvenue :</div><div id="name">Prénom / Nom</div><div id="profil"><a href="users.html">Votre profil</a></div><a href="notifications.html"><input border=0 src="./img/not.jpg" type=image value=submit align="center" id="not"></a><a href="login.html"><input border=0 src="./img/deco.jpg" type=image value=submit align="center" id="deco"></a></div>
+		</div>
+			<div id="menus">
+				<div class="menu menupasdernier" id="home"><a href="index.html">Accueil</a></div>
+				<div class="menu menupasdernier" id="users"><a href="list_user.html">Utilisateur</a></div>
+				<div class="menu menupasdernier" id="project"><a href="projects.html">Projets</a></div>
+				<div class="menu" id="skills"><a href="skills.html">Compétences</a></div>
+			</div>
+			<div class="clearer"></div>
+		<br />
+		<div id="file"><a href="index.html">Home</a> > Notification</div><br />
+<div id="1" class="notification-box">
+	<div class="notification-close"> X </div>
+<span class="notification-content"> Proposition de compétences : Votre proposition de compétence à été accepté par l'administrateur. </span><br>
+<a  href="skills.html"> Liste des compétences </a>
+</div>
+
+<div id="2" class="notification-box">
+	<div class="notification-close"> X </div>
+<span class="notification-content"> Votre candidature au projet XOXOXOO a été retenue </span><br>
+<a  href="projects.html"> Liste des projets </a>
+</div>
+
+<div id="3" class="notification-box">
+	<div class="notification-close"> X </div>
+<span class="notification-content"> Le projet papapapapa est maintenant terminé. </span><br>
+<a  href="projects.html"> Liste des projets </a>
+</div>
+
+<div id="4" class="notification-box">
+	<div class="notification-close"> X </div>
+<span class="notification-content"> Machin (chef de projet) a réévalué votre compétence SQL </span><br>
+<a  href="skills.html"> Liste des compétences </a>
+</div>
+
+			<div id="footer">
+				<div class="footer footerpasdernier" id="contact"><a href="#">Contactez l'administrateur</a>&nbsp;</div><div class="footer footerpasdernier" id="notices"><a href="#">Mentions Légales</a>&nbsp;</div><div class="footer" id="sitemap"><a href="#">Plan du site</a></div><div id="menu_footer_right">© IMIE</div>
+			</div>		
+			<div class="clearer"></div>
+</div>
+<script>
+$('.notification-close').click(function() {
+	id = $(this).parent().attr('id')
+	$('#'+id).hide()
+})
+</script>
+</div>	
+</body>
+</html>

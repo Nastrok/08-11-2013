@@ -1,0 +1,131 @@
+<html lang="fr-fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="./css/style.css" />
+<link type="text/css" rel="stylesheet" href="./css/users.css" />
+<link type="text/css" rel="stylesheet" href="./css/projects.css" />
+<link type="text/css" rel="stylesheet" href="./css/skills.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	
+<style>
+
+</style>
+</head>
+<body>
+	<div id="shadow-box"></div>
+	<div id="shadow-create">
+		<h2 id="title_box">Ajouter une compétence</h2>
+		<input type="text" id="label" value="label" onfocus="if(this.value =='label') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'label'; }"/><br/>
+		<a href="skills2.html" class="a_btn a_btnbox create">Create</a>
+		<a class="a_btn a_btnbox back">Back to list</a>
+	</div>
+<div id="bloc_page">	
+		<div id="header">
+			<img src="./img/header.jpg"><div id="inf_users"><div id="bienvenue">Bienvenue :</div><div id="name">Prénom / Nom</div><div id="profil"><a href="users.html">Votre profil</a></div><a href="notifications.html"><input border=0 src="./img/not.jpg" type=image value=submit align="center" id="not"></a><a href="login.html"><input border=0 src="./img/deco.jpg" type=image value=submit align="center" id="deco"></a></div>
+		</div>
+			<div id="menus">
+				<div class="menu menupasdernier" id="home"><a href="index.html">Accueil</a></div>
+				<div class="menu menupasdernier" id="users"><a href="list_user.html">Utilisateur</a></div>
+				<div class="menu menupasdernier" id="project"><a href="projects.html">Projets</a></div>
+				<div class="menu" id="skills"><a href="skills.html">Compétences</a></div>
+			</div>
+			<div class="clearer"></div>
+		<br />
+		<div id="file"><a href="index.html">Home</a> > Compétences</div><br />
+		<div id="contenu_page">
+    <div id="arbo-competence">
+        <form>
+            <a class="a_btn create">Create</a>
+            <a class="a_btn">Update</a>    
+            <a class="a_btn">Delete</a>
+            <a class="a_btn">Read</a><br/><br/>
+            <input type="text" name="search" value="Recherche"  onfocus="if(this.value =='Recherche') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Recherche'; }">
+            <a class="a_btn" id="go">Go </a>
+                <ul>
+                    <li class="level1">Developpement
+                        <div class="submenu"></div>
+                        <div class="submenu mobil"></div>
+                    </li>
+                    <ul class="ul2">
+                        <li class="level2">Web <span class="hide">-</span>
+                            <div class="submenu tohide"></div>
+                            <div class="submenu tohide"></div>
+                            <div class="twoitems tohide"></div>
+                        </li>
+                        <ul class="ul3 tohide">
+                            <li class="level3">HTML</li>
+                            <li class="level3 js">Javascript</li>
+                            <div class="submenu"></div>
+                                <li class="level4">jQuery</li>
+                            <li class="level3 css">CSS</li>
+                            </ul>
+                            
+                        </ul>
+                    </ul>
+                     <ul  class="ul2">
+                        <li class="level2 mob">Mobile <span class="show">+</span></li>
+                            <ul class="toshow">
+                                <div class="submenu3"></div>
+                                <li class="level3" id="C">ObjectiveC</li> 
+                                <div class="submenu3"></div>
+                                <li class="level3" id="Java">Java</li>
+                            </ul> 
+                    </ul>
+                </ul>
+        </form>
+    </div>
+	
+<script>
+$( document ).ready( function() {
+    $('.show').click(function() {
+        $('.tohide').css('display', 'none')
+        $('.hide').html('+')
+        $('.show').html('-')
+        $('.toshow').css('display', 'block')
+        $('.mobil').css('height' ,'30px')
+    })
+    $('.hide').click(function() {
+        if($('.toshow').css('display') == "none" && $('.tohide').css('display') == 'none' ) {
+            $('.tohide').css('display', 'block')
+            $('.mobil').css('height' ,'200px')
+            $('.hide').html('+')
+        } else if ($('.toshow').css('display') == "none" && $('.tohide').css('display') == 'block' ) {
+            $('.tohide').css('display', 'none')
+            $('.mobil').css('height' ,'30px')
+            $('.hide').html('+')
+        } else {
+            $('.toshow').css('display', 'none')
+            $('.hide').html('-')
+            $('.show').html('+')
+            $('.tohide').css('display', 'block')
+            $('.mobil').css('height' ,'200px')
+        }
+    })
+    
+    $('.create').click(function() {
+        $('#shadow-box').css('display', 'block')
+        $('#shadow-create').css('display', 'block')          
+    })
+    
+    $('.back').click(function() {
+        $('#shadow-box').css('display', 'none')
+        $('#shadow-create').css('display', 'none')          
+    })
+	
+	$('#go').click(function() {
+		$('.js').css('fontWeight', 'bold')
+		$('.tohide').show()
+        $('.mobil').css('height' ,'200px')
+	})
+})
+</script>
+				<div class="clearer"></div>
+				<br />
+			</div>
+			<div id="footer">
+				<div class="footer footerpasdernier" id="contact"><a href="#">Contactez l'administrateur</a>&nbsp;</div><div class="footer footerpasdernier" id="notices"><a href="#">Mentions Légales</a>&nbsp;</div><div class="footer" id="sitemap"><a href="#">Plan du site</a></div><div id="menu_footer_right">© IMIE</div>
+			</div>			
+			<div class="clearer"></div>
+</div>	
+</body>
+</html>

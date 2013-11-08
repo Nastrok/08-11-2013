@@ -1,0 +1,173 @@
+<html lang="fr-fr">
+<head>
+<link type="text/css" rel="stylesheet" href="./css/style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<div id="shadow-box"></div>
+<div id="bloc_page">	
+		<div id="header">
+			<img src="./img/header.jpg"><div id="inf_users"><div id="bienvenue">Bienvenue :</div><div id="name">Prénom / Nom</div><div id="profil"><a href="users.html">Votre profil</a></div><a href="notifications.html"><input border=0 src="./img/not.jpg" type=image value=submit align="center" id="not"></a><a href="login.html"><input border=0 src="./img/deco.jpg" type=image value=submit align="center" id="deco"></a></div>
+		</div>
+			<div id="menus">
+				<div class="menu menupasdernier" id="home"><a href="index.html">Accueil</a></div>
+				<div class="menu menupasdernier" id="users"><a href="users.html">Utilisateurs</a></div>
+				<div class="menu menupasdernier" id="project"><a href="projects.html">Projets</a></div>
+				<div class="menu" id="skills"><a href="skills.html">Comp&eacute;tences</a></div>
+			</div>
+			<div class="clearer"></div>
+        <div id="content_user_home">
+        <div class="light_box" id="light_box_addskills">
+    <div id="arbo-competence">
+        <form>
+            <input type="text" name="search" value="Recherche rapide"  onfocus="if(this.value =='Recherche') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Recherche'; }">
+            <a class="a_btn" id="go">Go </a>
+                <ul>
+                    <li class="level1">Developpement
+                        <div class="submenu"></div>
+                        <div class="submenu mobil"></div>
+                    </li>
+                    <ul class="ul2">
+                        <li class="level2">Web <span class="hide">-</span>
+                            <div class="submenu tohide"></div>
+                            <div class="submenu tohide"></div>
+                            <div class="twoitems tohide"></div>
+                        </li>
+                        <ul class="ul3 tohide">
+                            <li class="level3">HTML</li>
+                            <li class="level3 js">Javascript</li>
+                            <div class="submenu"></div>
+                                <li class="level4">jQuery</li>
+                            <li class="level3 css">CSS</li>
+                            </ul>
+                            
+                        </ul>
+                    </ul>
+                     <ul  class="ul2">
+                        <li class="level2 mob">Mobile <span class="show">+</span></li>
+                            <ul class="toshow">
+                                <div class="submenu3"></div>
+                                <li class="level3" id="C">ObjectiveC</li> 
+                                <div class="submenu3"></div>
+                                <li class="level3" id="Java">Java</li>
+                            </ul> 
+                    </ul>
+                </ul>
+        </form>
+    </div>
+        </div>
+              <span id="bienvenue">Bonjour François Dupont, voici votre profil...</span>
+              
+              <div id="user_projects">
+                
+                <div id="user_projects_tab">
+
+                  <table id="table_projects">
+              			<caption>Voici les projets auxquels vous participez, vous avez 1 projet(s) en cours et 0 projet(s) termin&eacute;(s)
+                      <br />
+                       <span class="projet_encours">Projet(s) en cours</span> <br />
+                        <span class="projet_termine">Projet(s) Termin&eacute;(s)</span>
+                      
+                    </caption>
+                    <tr>
+              			<th>Nom du projet</th>
+              			<th>Type du projet</th>
+              			<th>Nom chef de projet</th>
+              			<th>Date d&eacute;but projet</th>
+              			<th>Nmb personne(s) dans projet</th>
+              			</tr>
+              			<tr class="projet_encours">
+              			<td><a href="#123" class="projet_encours">Consectetur</a></td>
+              			<td>Indolor aliquam</td>
+              			<td>Vous</td>
+              			<td>21-12-2012</td>
+              			<td>404</td>
+              			</tr>
+              			<tr>
+              			<td colspan="5" class="projet_termine">Pas de projet terminé</td>
+              			</tr>
+              		</table>
+                </div>
+              </div>
+              
+            <div id="user_skills">
+               <span id="user_skills_title">Voici la liste des comp&eacute;tences que vous vous &ecirc;tes attribu&eacute;es</span>
+               
+                <div class="competence">
+                <div class="user_levels">
+                <span class="user_compet">HTML</span>
+                </div>
+                <div class="user_ul user_levels">
+                <ul>
+                <li class="full"></li>
+                <li class="full"></li>
+                <li class="empty"></li>
+                <li class="empty"></li>
+                <li class="empty"></li>
+                </ul>
+                </div>
+                </div>
+                
+                <div class="competence">
+                <div class="user_levels">
+                <span class="user_compet ">Java</span>
+                </div>
+                <div class="user_ul user_levels">
+                <ul class="">
+                <li class="full"></li>
+                <li class="full"></li>
+                <li class="full"></li>
+                <li class="empty"></li>
+                <li class="empty"></li>
+                </ul>
+                </div>
+                </div>
+                
+                <div class="competence">
+                <div class="user_levels"> 
+                <span class="user_compet">.NET</span>
+                </div>
+                <div class="user_ul user_levels">
+                <ul class="">
+                <li class="full"></li>
+                <li class="full"></li>
+                <li class="full"></li>
+                <li class="full"></li>
+                <li class="full"></li>
+                </ul>
+                </div>
+                </div>
+                <input id="add_skill" class="users_submit" type="submit" value="Ajouter une comp&eacute;tence" />
+          </div>  
+              
+              
+              
+        <div id="manage_user">
+          <span id="manage_title">Modifier votre profil</span>
+          
+          <input class="champs_manage_user" type="text" value="Fran&ccedil;ois" />
+          <input class="champs_manage_user" type="text" value="Dupont" />
+          <input class="champs_manage_user" type="mail" value="fr_dupont@coucou.fr" />
+          <input class="champs_manage_user users_submit" type="submit" value="Modifier" />
+        </div>      
+              
+        </div>
+        
+			<div id="footer">
+				<div class="footer footerpasdernier" id="contact"><a href="contact.html">Contactez l'administrateur</a>&nbsp;</div><div class="footer footerpasdernier" id="notices"><a href="notices.html">Mentions Légales</a>&nbsp;</div><div class="footer" id="sitemap"><a href="sitemap.html">Plan du site</a></div><div id="menu_footer_right">© IMIE</div>
+			</div>
+      <div class="clearer"></div>	
+	</div>
+<script type="text/javascript">
+$('#add_skill').click(function(){
+  $('#light_box_addskills').css('display','block');
+  $('#shadow-box').css('display','block');
+});
+
+$('#shadow-box').click(function(){
+  $('#light_box_addskills').css('display','none');
+  $('#shadow-box').css('display','none');
+});
+</script>
+</body>	
+</html>
